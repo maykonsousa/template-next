@@ -13,7 +13,7 @@
 
 > Este é um template configurado para inicializar um projeto Next já com algumas ferramentas de padrão e qualidade de código. Ao usar esse template, não esqueça de atualizar esse arquivo README, para documentar o seu projeto
 
-## Ferramentas inclusa
+## Ferramentas inclusas
 
 - **ESLint - Styleguide do AirBnB:** Esta configuração ajuda a manter um código JavaScript consistente e de alta qualidade, seguindo as diretrizes do estilo do AirBnB.
 

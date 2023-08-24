@@ -4,7 +4,14 @@
 
 
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: #fff;
+@layer base {
+  body {
+    @apply bg-gray-900;
+    @apply text-gray-100;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  
 }

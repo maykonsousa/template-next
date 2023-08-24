@@ -8,8 +8,24 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "test:changed": "jest --findRelatedTests"
   },
+
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "npm run test:changed"
+    ]
+  },
+
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  },
+
   "dependencies": {
     "@types/node": "20.4.9",
     "@types/react": "18.2.20",

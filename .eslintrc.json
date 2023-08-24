@@ -1,0 +1,62 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+      "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2015,
+      "sourceType": "module",
+      "project": "./tsconfig.json",
+      "ecmaFeatures": {
+        "tsx": true
+      }
+    },
+    "plugins": [
+      "import",
+      "jsx-a11y",
+      "react",
+      "react-hooks",
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "no-console": "error",
+      "import/no-extraneous-dependencies": "off",
+      "react/require-default-props": "off",
+      "@typescript-eslint/no-explicit-any": "error",
+      "react/prop-types": "off", // If you're using TypeScript, prop-types are not needed
+      "@typescript-eslint/explicit-module-boundary-types": "off", // Allows you to skip explicit return types in TypeScript
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }], // Only .tsx files for JSX
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never"
+        }
+      ],
+      "import/no-unresolved": "off", // TypeScript takes care of this
+      "react/react-in-jsx-scope": "off", // Not needed in Next.js
+      "react/jsx-props-no-spreading": "off", // Allowing spread props
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "import/prefer-default-export": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    }
+}
+

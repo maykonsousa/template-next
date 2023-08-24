@@ -5,8 +5,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/maykonsousa/template-next?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/maykonsousa/template-next?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/maykonsousa/template-next?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/maykonsousa/template-next?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/maykonsousa/template-next?style=for-the-badge)
+
 
 
   
